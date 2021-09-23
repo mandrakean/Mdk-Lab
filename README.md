@@ -9,7 +9,7 @@ https://www.figma.com/proto/BdRGcDG4einh9leRE9acSu/Site?node-id=42%3A242&scaling
 
 ## Estilo de logo
 [Mandalorian](https://fontmeme.com/the-mandalorian-font/)
-[Futuritic](https://fontmeme.com/futuristic-fonts/)
+[Futuristic](https://fontmeme.com/futuristic-fonts/)
 
 ## Paleta
 [Coolors](https://coolors.co/272635-eeebd0-f77f00-ff47bb-6f48a3-941b0c)
