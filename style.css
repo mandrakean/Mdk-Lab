@@ -13,7 +13,6 @@ html{
     --cor-preto: #272635;
     --cor-branco: #EEEBD0;
     --cor-amarela: #F77F00;
-    --cor-rosa: #FF47BB;
     --cor-roxa: #6F48A3;
     --cor-vermelha: #941B0C;
 }
@@ -33,6 +32,7 @@ nav{
     right: 0;
     background-color: var(--cor-preto);
     padding: 5px 0;
+    z-index: 201;
 }
 
 nav .wrapper{
@@ -73,33 +73,46 @@ nav .search-icon img{
 
 header{
     padding: 86px 0;
-    height: 700px;
+    height: 550px;
 }
 
 .painel1{
     width: 66%;
-    height: 400px;
+    height: 410px;
     float: left;
 }
 
 .painel1 img {
     width: 100%;
-    height: 400px;
+    height: 410px;
+}
+
+.img-painel1{
+    height: 410px;
 }
 
 .painel1 .info-painel1{
-    padding: 0 0 0 14px;
+    height: 320px;
+    padding: 160px 32px;
     z-index: 200;
-    display: block;
-    margin: -77px 0 0 0;
+    position: relative;
+    bottom: 324px;
     color: var(--cor-branco);
-    background-image: linear-gradient(#fff, #232323);
+    background-image: linear-gradient(#fff0, #000000f5);
+}
+
+.painel1 h2{
+    font-size: 41px;
+    text-shadow: #20f2f2 1px 1px 0px, #d94064 -1px -1px 0px, #000 0px 0px 5px;
+    text-transform: uppercase;
+    padding-top: 46px;
 }
 
 .painel2{
     width: 33%;
-    height: 230px;
+    height: 200px;
     float: right;
+    margin-bottom: 10px;
 }
 
 .painel2 img {
@@ -109,7 +122,7 @@ header{
 
 .painel3{
     width: 33%;
-    height: 230px;
+    height: 200px;
     float: right;
 }
 
@@ -121,6 +134,21 @@ header{
 /* ------------------------------------------------------ */
 /* ---------------------- Sections ---------------------- */
 /* ------------------------------------------------------ */
+
+#principal h2:nth-child(1){
+    border-left: 10px solid #6F48A3;
+    padding-left: 9px;
+}
+
+#principal h2:nth-child(3){
+    border-left: 10px solid #941B0C;
+    padding-left: 9px;
+}
+
+#principal h2:nth-child(5){
+    border-left: 10px solid #F77F00;
+    padding-left: 9px;
+}
 
 section{
     display: flex;
