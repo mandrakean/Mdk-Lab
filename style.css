@@ -17,9 +17,19 @@ html{
     --cor-vermelha: #941B0C;
 }
 
+body{
+    background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
+}
+
 .wrapper{
     width: 1152px;
     margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
 }
 
 /* ------------------------------------------------- */
@@ -67,151 +77,52 @@ nav .search-icon img{
     width: 25px;
     height: auto;
 }
-/* ---------------------------------------------------- */
-/* ---------------------- header ---------------------- */
-/* ---------------------------------------------------- */
-
-header{
-    padding: 86px 0;
-    height: 550px;
-}
-
-.painel1{
-    width: 69%;
-    height: 410px;
-    float: left;
-    transition: 0.1s ease-in-out;
-}
-
-.painel1:hover{
-    transform: scale(1.025);
-    transition: 0.1s ease-in-out;
-}
-
-.painel1 img {
-    width: 100%;
-    height: 410px;
-}
-
-.img-painel1{
-    height: 410px;
-}
-
-.painel1 .info-painel1{
-    height: 320px;
-    padding: 160px 32px;
-    z-index: 200;
-    position: relative;
-    bottom: 324px;
-    color: var(--cor-branco);
-    background-image: linear-gradient(#fff0, #000000f5);
-}
-
-.painel1 h2{
-    font-size: 41px;
-    text-shadow: #20f2f2 1px 1px 0px, #d94064 -1px -1px 0px, #000 0px 0px 5px;
-    text-transform: uppercase;
-    padding-top: 46px;
-}
-
-.painel2{
-    width: 30%;
-    height: 200px;
-    float: right;
-    margin-bottom: 10px;
-    transition: 0.1s ease-in-out;
-}
-
-.painel2 img {
-    width: 100%;
-    height: 200px;
-}
-
-.painel2:hover{
-    transform: scale(1.05);
-    transition: 0.1s ease-in-out;
-}
-
-.painel3{
-    width: 30%;
-    height: 200px;
-    float: right;
-    transition: 0.1s ease-in-out;
-}
-
-.painel3 img {
-    width: 100%;
-    height: 200px;
-}
-
-.painel3:hover{
-    transform: scale(1.05);
-    transition: 0.1s ease-in-out;
-}
 
 /* ------------------------------------------------------ */
-/* ---------------------- Sections ---------------------- */
+/* ---------------------- Articles ---------------------- */
 /* ------------------------------------------------------ */
-
-.catpod{
-    border-left: 10px solid #6F48A3;
-    padding-left: 9px;
-}
-
-.catvid{
-    border-left: 10px solid #941B0C;
-    padding-left: 9px;
-}
-
-.catart{
-    border-left: 10px solid #F77F00;
-    padding-left: 9px;
-}
 
 .articles{
-    display: flex;
-    margin: 25px 0 50px 0;
+    width: 63%;
+    margin: 0 50px 0 0;
 }
 
 article{
-    width: 33%;
-    margin: 0 10px 0 0;
+    width: 100%;
+    margin: 0 50px 25px 0;
+    padding: 23px;
+    border-radius: 35px;
+    background-color: #FFF;
 }
 
 article img{
     width: 100%;
-    height: 230px;
-    transition: 0.1s ease-in-out;
+    height: auto;
+    border-radius: 15px;
 }
 
-article img:hover{
-    transform: scale(1.03);
-    transition: 0.1s ease-in-out;
+article h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    margin: 0;
 }
 
-#principal h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 41px;
+/* ------------------------------------------------------ */
+/* ------------------------ Aside ----------------------- */
+/* ------------------------------------------------------ */
+
+.menuLateral{
+    width: 32%;
 }
 
-.wrapper-articles{
-    display: flex;
-    width: 100%;
-}
-
-.arrowL{
-    position: relative;
-    float: left;
-    width:50px;
-    height: 286px;
-}
-
-.arrowR{
-    position: relative;
-    float: right;
-    width:50px;
-    transform: rotate(180deg);
-    height: 286px;
+.widget{
+    padding: 23px;
+    border-radius: 35px;
+    background-color: #FFF;
 }
 
 /* ------------------------------------------------------ */

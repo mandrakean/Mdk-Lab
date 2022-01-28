@@ -2,10 +2,6 @@ Mdk Lab é meu pequeno playground de experiências tanto de conteúdos quanto de
 
 **site:** [Mdk Lab](www.mdklab.com.br)
 
-## Protótipo
-
-https://www.figma.com/proto/BdRGcDG4einh9leRE9acSu/Site?node-id=42%3A242&scaling=scale-down
-
 
 ## Estilo de logo
 [Mandalorian](https://fontmeme.com/the-mandalorian-font/)
