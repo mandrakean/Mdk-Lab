@@ -41,8 +41,8 @@ nav{
     left: 0;
     right: 0;
     background-color: var(--cor-preto);
-    padding: 5px 0;
-    z-index: 201;
+    padding: 0;
+    z-index: 200;
 }
 
 nav .wrapper{
@@ -61,12 +61,23 @@ nav ul{
     list-style: none;
 }
 
+nav ul li{
+    border-bottom: 5px solid #00000000;
+    padding: 25px 0;
+}
+
+nav ul li:hover{
+    border-bottom: 5px solid var(--cor-amarela);
+    padding: 25px 0;
+}
+
 nav ul li a, nav ul li a:visited{
     color: var(--cor-branco);
     text-decoration: none;
     margin: 0 20px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 nav .search-icon{
@@ -83,15 +94,15 @@ nav .search-icon img{
 /* ------------------------------------------------------ */
 
 .articles{
-    width: 63%;
+    width: 70%;
     margin: 0 50px 0 0;
 }
 
 article{
     width: 100%;
     margin: 0 50px 25px 0;
-    padding: 23px;
-    border-radius: 35px;
+    padding: 23px 23px 32px 23px;
+    border-radius: 15px;
     background-color: #FFF;
 }
 
@@ -108,21 +119,163 @@ article h2{
     line-height: 1.25;
     letter-spacing: 0.6px;
     text-decoration: none;
-    margin: 0;
+    margin: 10px 0 0 10px;
 }
+
+.post-meta {
+    overflow: hidden;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 14px;
+}
+
+.post-meta .post-author, .post-meta .post-date, .post-meta .post-tag {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.post-meta .post-author:before, .post-meta .post-date:before, .post-meta .post-tag:before {
+    font-family: FontAwesome;
+    font-weight: 400;
+    margin: 0 3px 0 0;
+    color: var(--cor-roxa);
+}
+
+.post-meta a {
+    color: #aaa;
+    transition: color .17s;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    color: #5ac0b8;
+}
+
+.post-meta .post-author:before {
+    content: '\f007';
+}
+
+.post-meta .post-date:before {
+    content: '\f017';
+}
+
+.post-meta .post-tag:before {
+    content: '\f115';
+}
+
 
 /* ------------------------------------------------------ */
 /* ------------------------ Aside ----------------------- */
 /* ------------------------------------------------------ */
 
 .menuLateral{
-    width: 32%;
+    width: 25%;
 }
 
 .widget{
-    padding: 23px;
-    border-radius: 35px;
+    padding: 8px 23px 55px 23px;
+    border-radius: 15px;
     background-color: #FFF;
+}
+
+.widget h3 {
+    height: 34px;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 34px;
+    padding: 0;
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+
+.widget ul{
+    list-style: none;
+}
+
+ul .socialWidget{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul.socialWidget {
+    margin: 0 -5px;
+}
+
+.socialWidget li:nth-child(1), .socialWidget li:nth-child(2), .socialWidget li:nth-child(3), .socialWidget li:nth-child(4), .socialWidget li:nth-child(5) {
+    margin-top: 0;
+}
+
+.socialWidget li {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin: 10px 0 0 0;
+}
+
+.socialWidget li a {
+    display: block;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+    transition: opacity .17s;
+}
+
+.social a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.social-color .twitter a {
+    background-color: #00acee;
+}
+
+.social-color .instagram a {
+    background: linear-gradient(
+15deg
+,#ffb13d,#dd277b,#4d5ed4);
+}
+
+.social-color .youtube a {
+    background-color: #db4a39;
+}
+
+.social-color .whatsapp a {
+    background-color: #3fbb50;
+}
+
+.social-color .rss a {
+    background-color: #ffc200;
+}
+
+.social .twitter a:before {
+    content: "\f099";
+}
+
+.social .instagram a:before {
+    content: "\f16d";
+}
+
+.social .youtube a:before {
+    content: "\f16a";
+}
+
+.social .whatsapp a:before {
+    content: "\f232";
+}
+
+.social .rss a:before {
+    content: "\f09e";
 }
 
 /* ------------------------------------------------------ */
@@ -132,4 +285,6 @@ article h2{
 footer{
     padding: 15px 0;
     margin-top: 50px;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
 }
